@@ -1,0 +1,34 @@
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="index.css">
+        <title>Color Pallete</title>
+    </head>
+    <body>
+        <main>
+            <div id="userInput">
+                <input id="colorPicker" type="color" aria-label="Choose your color from the color picker.">
+                <select name="colorScheme" id="colorScheme" aria-label="Select the type of color scheme you want.">
+                    <option value="monochrome-dark">Monochrome-dark</option>
+                    <option value="monochrome-light">Monochrome-light</option>
+                    <option value="analogic">Analogic</option>
+                    <option value="complement">Complement</option>
+                    <option value="analogic-complement">Analogic-complement</option>
+                    <option value="triad">Triad</option>
+                </select>
+                <button id="getColors" aria-label="Get your color scheme.">Get color scheme</button>
+            </div>
+            <div id="color-swatches-container">
+                <!-- COLOR SWATCHES WILL BE INSERTED HERE -->
+            </div>
+            <div id="color-code-container">
+                <!-- COLOR CODES WILL BE INSERTED HERE -->
+            </div>
+        </main>
+        <script src="index.js"></script>
+    </body>
+</html>
