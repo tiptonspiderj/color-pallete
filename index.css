@@ -15,10 +15,15 @@ html, body {
   align-items: center;
 }
 
-#colorPicker {
+input[type="color"] {
+  padding: 0;
+  margin-left: 10px;
   height: 45px;
   width: 60px;
+  border-radius: 5px;
   cursor: pointer;
+  border: none;
+  background: #1F2937;
 }
 
 #colorScheme {
