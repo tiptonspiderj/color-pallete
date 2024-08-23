@@ -67,27 +67,28 @@ option {
 }
 
 #color-swatches-container {
-  width: 100%;
+  width: 98%;
   height: 75vh;
   display: grid;
   grid-auto-flow: column;
   grid-template-colums: repeat(5, 1fr);
+  margin: 0 auto;
 }
 
 #color-code-container {
-  width: 100%;
+  width: 98%;
   height: 10vh;
   display: grid;
   grid-auto-flow: column;
   grid-template-colums: repeat(5, 1fr);
+   grid-auto-columns: minmax(75px, auto);
+  margin: 0 auto;
 }
 
 #myColorText {
-  padding: 0;
-  margin: 0;
-  display: flex;
+  display: grid;
   align-items: center;
-  justify-content: center;
+  justify-items: center;
   color: #D5D4D8;
 }
 
