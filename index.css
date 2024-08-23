@@ -16,14 +16,25 @@ html, body {
 }
 
 input[type="color"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   padding: 0;
   margin-left: 10px;
   height: 45px;
   width: 60px;
-  border-radius: 5px;
   cursor: pointer;
   border: none;
   background: #1F2937;
+}
+
+input[type="color"]::-webkit-color-swatch {
+  border-radius: 5px;
+  border: none;
+}
+input[type="color"]::-moz-color-swatch {
+  border-radius: 5px;
+  border: none;
 }
 
 #colorScheme {
