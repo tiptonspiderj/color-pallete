@@ -17,10 +17,10 @@ myButton.addEventListener("click", function() {
     let hexValues = ""
     for (color of colorsArray.colors) {
       swatches += `
-          <div id="myColor" style="background-color:${color.hex.value};"></div>
+          <div id="color-Swatch" style="background-color:${color.hex.value};"></div>
       `
       hexValues +=`
-          <div id="myColorText">${color.hex.value}</div>
+          <div id="hex-Value-Text">${color.hex.value}</div>
       `
     }
     colorSwatches.innerHTML = swatches

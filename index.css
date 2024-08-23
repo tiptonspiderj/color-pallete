@@ -81,18 +81,18 @@ option {
   display: grid;
   grid-auto-flow: column;
   grid-template-colums: repeat(5, 1fr);
-   grid-auto-columns: minmax(75px, auto);
+  grid-auto-columns: minmax(75px, auto);
   margin: 0 auto;
 }
 
-#myColorText {
+#hex-Value-Text {
   display: grid;
   align-items: center;
   justify-items: center;
   color: #D5D4D8;
 }
 
-#myColorText:hover {
+#hex-Value-Text:hover {
   background-color: #D5D4D8;
   cursor: pointer;
   color: black;
