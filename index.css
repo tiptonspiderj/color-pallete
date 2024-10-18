@@ -71,7 +71,7 @@ option {
   height: 75vh;
   display: grid;
   grid-auto-flow: column;
-  grid-template-colums: repeat(5, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   margin: 0 auto;
 }
 
@@ -80,19 +80,19 @@ option {
   height: 10vh;
   display: grid;
   grid-auto-flow: column;
-  grid-template-colums: repeat(5, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   grid-auto-columns: minmax(75px, auto);
   margin: 0 auto;
 }
 
-#hex-Value-Text {
+.hex-Value-Text {
   display: grid;
   align-items: center;
   justify-items: center;
   color: #D5D4D8;
 }
 
-#hex-Value-Text:hover {
+.hex-Value-Text:hover {
   background-color: #D5D4D8;
   cursor: pointer;
   color: black;
