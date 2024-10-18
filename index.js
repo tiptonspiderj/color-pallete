@@ -3,13 +3,14 @@ const colorPicker = document.getElementById('colorPicker');
 const colorScheme = document.getElementById('colorScheme')
 const colorSwatches = document.getElementById('color-swatches-container')
 const colorCodes = document.getElementById('color-code-container')
+const colorCode = document.querySelectorAll("#color-code-container div")
 
 
 myButton.addEventListener("click", function() {
   //remove the # symbol from the color value for the API string
-  let color = colorPicker.value.slice(1)
-  let scheme = colorScheme.value
-  let url = "https://www.thecolorapi.com/scheme?hex=" + color + "&format=json&mode=" + scheme
+  const colors = colorPicker.value.slice(1)
+  const scheme = colorScheme.value
+  const url = `https://www.thecolorapi.com/scheme?hex=${colors}&format=json&mode=${scheme}`
   fetch(url)
   .then(res => res.json())
   .then(colorsArray => {
@@ -25,8 +26,7 @@ myButton.addEventListener("click", function() {
     }
     colorSwatches.innerHTML = swatches
     colorCodes.innerHTML = hexValues
-
-    const colorCode = document.querySelectorAll("#color-code-container div")
+    
     for (let i = 0; i < colorsArray.colors.length; i++) {
       const color = colorsArray.colors[i].hex.value;
       colorCode[i].setAttribute("data-color", color);
