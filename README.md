@@ -1,4 +1,4 @@
-# Color pallet generator
+# Color pallete generator
 This application will provide two random passwords per your specifications.  
 
 ## Description
