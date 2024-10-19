@@ -1,9 +1,9 @@
 # Color pallete generator
-This application will provide two random passwords per your specifications.  
+This application will provide different color pallete options from a color of your choosing.  
 
 ## Description
 
-If you don't trust big company's to provide unique random passowrds, then this is the program for you.  If you combine this with my Passman application built in Java, then you will never forget a password again.  Your accounts will never be hacked.  This program makes creating a unique, random password effortless.
+This application will let you choose from seven different color pallete types.  It interacts with the color api website.
 
 ## Getting Started
 
